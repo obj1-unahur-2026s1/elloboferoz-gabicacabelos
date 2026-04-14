@@ -1,7 +1,7 @@
 object caperucita {
     const pesoBase = 60
     
-    // El peso de Caperucita incluye el de la canasta que lleva consigo
+    // El peso de Caperucita incluye el de la canasta que lleva 
   method peso() = pesoBase + canasta.peso()
   
   // Si a caperucita se le cae una manzana, se lo delega a la canasta

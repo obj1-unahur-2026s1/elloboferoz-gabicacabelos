@@ -9,13 +9,13 @@ object cazador
     if (lobo.estaSaludable()) 
     {
         lobo.comer(comida) // el lobo se come al cazador
-        return "lobo_se_lo_comio"
+        return "lobo se lo comio al cazador"
     } 
     else 
     {
         lobo.crisis() // el cazador provoca crisis
-        self.matarLobo(lobo)
-        return "cazador_provoca_crisis y mata al lobo"
+        self.matarLobo(lobo) //EL cazador mata al lobo
+        return "cazador provoca crisis y mata al lobo"
     }
 
     }
