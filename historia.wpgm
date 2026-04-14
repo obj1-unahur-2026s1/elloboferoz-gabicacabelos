@@ -1,0 +1,33 @@
+import feroz.*
+import caperucita.*
+import abuelita.*
+import cazador.*
+
+
+program historiaPrincipal {
+  //El lobo va corriendo hasta el bosque
+    feroz.correr()
+  //El lobo va corriendo hasta la casa de la abuelita
+    feroz.correr()
+  // El lobo se come a la abuelita (el objeto abuelita entra como "comida")
+  feroz.comer(abuelita)
+  // El lobo necesitaba correr para alcanzar a caperucita
+  //feroz.correr()
+   //feroz.correr()
+    //feroz.correr()
+
+  //Caperucita cruza el bosque y se le cae una manzana de su canasta
+    canasta.caerManzana()
+
+  //Feroz se come a caperucita y las manzanas por las preguntas incomodas sobre su aspecto
+   feroz.comer(caperucita)
+
+  //LLega el cazador y comienza el enfrentamiento final
+   //LLega el cazador y comienza el enfrentamiento final
+const resultado = cazador.enfrentar(feroz, cazador)
+
+    console.println("¿El lobo está vivo?: " + feroz.estaVivo())
+    console.println("Peso final del lobo: " + feroz.peso())
+    console.println(resultado)
+    
+}
