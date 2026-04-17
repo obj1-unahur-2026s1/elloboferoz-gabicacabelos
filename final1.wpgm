@@ -1,0 +1,22 @@
+import historia.*
+import feroz.*
+import caperucita.*
+import abuelita.*
+import cazador.*
+import armas.*
+import chanchitos.*
+
+program final1_loboGana {
+    console.println("--- FINAL 1: El lobo descubre el disfraz ---")
+    
+    // Hacemos que el lobo gane peso para que esté "saludable" (entre 20 y 150)
+    // Usamos el método ajustarPeso que ya tienes definido.
+    feroz.ajustarPeso(20) 
+    
+    // El cazador intenta su estrategia con el disfraz
+    cazador.enfrentarConDisfraz(feroz, pistola)
+    
+    console.println("¿El cazador está vivo?: " + cazador.estaVivo())
+    console.println("Peso del lobo: " + feroz.peso())
+}
+

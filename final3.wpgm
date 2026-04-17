@@ -1,0 +1,16 @@
+import historia.*
+import feroz.*
+import caperucita.*
+import abuelita.*
+import cazador.*
+import armas.*
+import chanchitos.*
+program final3_trampaChanchitos {
+    console.println("--- FINAL 3: La trampa y la escopeta ---")
+    
+    // El cazador le tiende la trampa enviando ambas armas
+    cazador.tenderTrampa(feroz, pistola, escopeta)
+    
+    console.println("¿El lobo está vivo?: " + feroz.estaVivo())
+    console.println("Vida final del lobo: " + feroz.vida())
+}

@@ -1,0 +1,22 @@
+import historia.*
+import feroz.*
+import caperucita.*
+import abuelita.*
+import cazador.*
+import armas.*
+import chanchitos.*
+
+program final2_cazadorEngania
+{
+     console.println("--- FINAL 2: El cazador engaña al lobo débil ---")
+    
+    // El lobo corre a los chanchitos y se cansa, quedando débil (peso menor a 20)
+    feroz.correr()
+    feroz.correr()
+    
+    // El cazador usa el disfraz y le dispara con la pistola
+    cazador.enfrentarConDisfraz(feroz, pistola)
+    
+    console.println("¿El lobo está vivo?: " + feroz.estaVivo())
+    console.println("Vida final del lobo: " + feroz.vida())
+}

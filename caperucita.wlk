@@ -8,6 +8,8 @@ object caperucita {
   method perderManzana() {
     canasta.caerManzana()
   }
+
+  
 }
 
 object canasta {
@@ -22,4 +24,6 @@ object canasta {
     cantidadManzanas -= 1
   }
 }
+
+
 }
