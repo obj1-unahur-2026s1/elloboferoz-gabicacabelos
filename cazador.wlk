@@ -5,7 +5,7 @@ object cazador {
     var property estaVivo = true
 
     
-
+    //Metodo de enfrentamiento 
     method enfrentarConDisfraz(lobo, arma) {
         console.println("El cazador se acerca disfrazado...")
         

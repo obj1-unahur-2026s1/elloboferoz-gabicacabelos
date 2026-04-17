@@ -9,18 +9,18 @@ object feroz {
   // Peso inicial y actual
   const pesoInicial = 10
  
- var property vida = 100 // Nueva variable de estado independiente
+ var property vida = 100 
   var property peso = 10
 
-  // ... (métodos de comer, correr, etc.) ...
 
-  // Nuevo método: El lobo recibe el impacto y resta su propia vida
+
+  // El lobo recibe el impacto y resta su propia vida
   method recibirDanio(cantidad) {
-    // Usamos 0.max() para asegurarnos de que la vida nunca sea menor a 0 [7]
+    // Usamos 0.max() para asegurarnos de que la vida nunca sea menor a 0
     vida = 0.max(vida - cantidad)
   }
 
-  // Ahora estar vivo depende puramente de la variable vida
+  // estar vivo depende puramente de la variable vida
   method estaVivo() = vida > 0 
 
 
@@ -47,12 +47,13 @@ object feroz {
   method estaSaludable() {
    return peso >= peso_min && peso <= peso_max
   }
-
+// El lobo muere inmediatamente
   method morir()
   {
     vida = 0
     peso = 0
   }
+  //Hace que el lobo baje la guardia y se relaje
   method noHayPeligro()
   {
    guardiaAlta = false
